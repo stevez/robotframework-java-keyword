@@ -1,0 +1,18 @@
+*** Settings ***
+Library           demo.MyKeywords
+ 
+*** Test Cases ***
+MyTestCase1
+    ${message}    Say Hi
+    Log    ${message}
+    Should Be Equal   ${message}   Hello World!
+ 
+MyTestCase2
+    ${message}    Say Hi    Steve
+    Log    ${message}
+    Should Be Equal   ${message}   Hello Steve
+ 
+MyTestCase3
+    ${message}    type of    42
+    Log    ${message}
+    Should Be Equal   ${message}   String
