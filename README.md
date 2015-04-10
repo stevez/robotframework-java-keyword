@@ -5,5 +5,4 @@ To run the test, type following command:
 
 mvn robotframework:run
 
-or
 mvn integeration-test
